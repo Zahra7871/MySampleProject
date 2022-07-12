@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p id="result"></p>
+
+<body>
+    <p>Input a Number between 5 and 10</p>
+    <input type="text" id="demo">
+    <button type="button" onclick="myFunction()">Test Input</button>
+    <p id="p01"></p>
+
+</body>
+<script>
+    function myFunction() {
+        var message, x;
+        message = document.getElementById('p01');
+        message = innerHTML = "";
+        x = document.getElementById('demo').value;
+        try {
+            if (x == "") throw "empty";
+            if (isNaN(x)) throw "not a number";
+
+            x = Number(x);
+
+            if (x < 5) throw "too low";
+            if (x > 10) throw "too hight";
+
+        }
+        catch (err) {
+            message.innerHTML = "input is" + err;
+
+        }
+        finally {
+            //document.getElementById('demo').value = "";
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // try {
+    //     addImanMadaeny("Iman Madaeny");
+
+    // }
+    // catch (error) {
+    //     document.getElementById('result').innerHTML = error.message;
+
+    // }
+    // finally {
+    //     document.write("finally");
+
+    // }
+    // function addImanMadaeny(name)
+    // {
+
+    // }
+    // throw "iman madaeny";
+</script>
+
+</html>

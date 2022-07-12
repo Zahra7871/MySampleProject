@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1 id="lbl">Result</h1>
+<button onclick="showDate()">Click Me!</button>
+<br />
+
+<button onclick="this.innerHTML=Date()">Click Me2</button>
+<br />
+<input type="text" onchange=alert('changed') />
+<input type="text" onchange= "inputChange(this.value)"/>
+
+
+<body>
+
+</body>
+<script>
+    function showDate() {
+        document.getElementById('lbl').innerHTML = Date();
+    }
+function inputChange(value)
+{
+    document.getElementById('lbl').innerHTML = value;
+}
+
+</script>
+
+</html>
